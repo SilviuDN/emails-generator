@@ -13,7 +13,9 @@
 - npm start
 
 ## Environmental variables: 
-- MYSQL_PASS
+    MYSQL_HOST=localhost
+    MYSQL_USER --> your user
+    MYSQL_PASSWORD --> your password
 
 ## Dependencies:
     "dotenv": "^10.0.0",

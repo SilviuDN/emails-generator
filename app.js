@@ -2,13 +2,15 @@ require("dotenv/config");
 
 const faker = require('faker')
 
-const PASS = process.env.MYSQL_PASS
+const HOST = process.env.MYSQL_HOST
+const PASSWORD = process.env.MYSQL_PASSWORD
+const USER = process.env.MYSQL_USER
 const mysql = require('mysql')
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: PASS,
+  host: HOST,
+  user: USER,
+  password: PASSWORD,
   database: 'users_emails'
 })
 
